@@ -273,22 +273,22 @@ body {
   margin-top: 12px;
 }
 .store_button {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  height: 48px;
-  min-width: 180px;
-  padding: 0 16px;
-  border-radius: 12px;
-  border: 1px solid rgba(255,255,255,0.12);
-  background: #0f0f0f;
-  color: #fff;
-  text-decoration: none;
-  transition: transform .2s ease, border-color .2s ease;
+  display: inline-block;
+  line-height: 0;
+  transition: transform .2s ease;
 }
-.store_button:hover { transform: translateY(-1px); border-color: rgba(255,255,255,0.3); }
-.store_button.apple { background: linear-gradient(180deg, #111, #0b0b0b); }
-.store_button.google { background: linear-gradient(180deg, #121212, #0c0c0c); }
-.store_label { font-size: 10px; color: #ccc; }
-.store_name { font-size: 16px; font-weight: 600; }
+.store_button:hover { transform: translateY(-1px); }
+.store_logo { height: 48px; width: auto; display: block; }
+
+.apple{
+  width: 120px;
+  height: auto;
+}
+
+.google{
+  width: auto;
+  height: 62px;
+}
+.store_badges{
+  align-items: center;
+}

@@ -35,15 +35,18 @@ export default function Home() {
           <h1>{t("Unlimited movies, shows, and more.")}</h1>
           <p>{t("Watch anywhere. Cancel anytime.")}</p>
           <div className="store_badges">
-            
             <a
               className="store_button apple"
               href="https://apps.apple.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span className="store_label">{t("Download on the")}</span>
-              <span className="store_name">{t("App Store")}</span>
+              <img
+                className="store_logo apple"
+                src="https://cdn.worldvectorlogo.com/logos/available-on-the-app-store.svg"
+                alt={`${t("Download on the")} ${t("App Store")}`}
+                height="48"
+              />
             </a>
             <a
               className="store_button google"
@@ -51,8 +54,12 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span className="store_label">{t("Get it on")}</span>
-              <span className="store_name">{t("Google Play")}</span>
+              <img
+                className="store_logo google"
+                src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                alt={`${t("Get it on")} ${t("Google Play")}`}
+                height="48"
+              />
             </a>
           </div>
           <div className="hero_art" aria-hidden>
